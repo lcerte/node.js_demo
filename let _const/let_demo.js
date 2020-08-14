@@ -36,7 +36,8 @@ const a = 1;
 a = 2;              // Assignment to constant variable
 
 const obj = {name : 'xx', age : 11};
-obj.name = 'yy';
+obj.name = 'yy';     //合法 因为改的时obj指向的对象的值 obj本身只是对象的地址
+obj = 'yy'; //报错 因为改了obj的值
 console.log(obj);   
 
 const b;
